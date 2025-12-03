@@ -2,7 +2,7 @@
 import { Tactic, Team, League, KitStyle } from './types';
 
 // Substitua este URL pelo URL da sua imagem (ex: '/logo.png' se estiver na pasta public, ou um link externo)
-export const APP_LOGO_URL = "/aduane-logo2.png";
+export const APP_LOGO_URL = new URL("aduane-logo2.png", import.meta.url).href;
 
 export const FOOTBALL_TACTICS: Tactic[] = [
   {
